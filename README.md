@@ -1,5 +1,7 @@
 # fastvars
 
+[![GoDoc](https://godoc.org/github.com/DistSynth/fastvars?status.svg)](https://godoc.org/github.com/DistSynth/fastvars)
+
 _fastvars_ is [fasttemplate](https://github.com/valyala/fasttemplate) wrapper with dictionary substitusion ability.
 
 ## Usage
