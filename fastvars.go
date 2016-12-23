@@ -33,7 +33,7 @@ func NewFastVarsDict(vars map[string]interface{}) (FastVars, error) {
 }
 
 //Process transform given template
-func (fv *FastVars) Process(tpl string) (interface{}, error) {
+func (fv *FastVars) Process(tpl string) (string, error) {
 	t := fasttemplate.New(tpl, startTag, endTag)
 	s := t.ExecuteFuncString(func(w io.Writer, tag string) (int, error) {
 		val, _ := fv.Get(tag)
